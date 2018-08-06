@@ -1,0 +1,71 @@
+/* pages/product/product.wxss */
+@import "../sedetail/sedetail.wxss";
+.product-title {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  margin:20rpx 0;
+  border-bottom: 2px solid #fff;
+}
+.product-title view {
+     padding: 20rpx 0;
+}
+.active{
+  color: #559bff;
+  border-bottom: 2px solid #296efe;
+}
+.product-info {
+  background: #fff;
+  padding: 30rpx 30rpx;
+}
+/* .info-title {
+    display: flex;
+    align-items: center;
+}
+.info-title image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.info-title text {
+  font-size: 34rpx;
+  margin-left: 30rpx;
+}
+.info-body {
+  display: flex;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.product-info {
+  background: #fff;
+  margin-bottom:20rpx;
+  position: relative; 
+}
+.hot {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.info-money {
+  width: 250rpx;
+  color: #ccc;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #ccc;
+}
+.info-money .money {
+  font-size: 36rpx;
+  color: #f08a00;
+}
+.info-con {
+  width: 350rpx;
+  margin-left:40rpx;
+   font-size: 24rpx;
+   color: #ccc;
+}
+.info-con .year {
+  color: #000;
+} */

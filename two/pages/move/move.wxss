@@ -1,0 +1,80 @@
+/* pages/move/move.wxss */
+@import "../service /service .wxss";
+page{
+   background: #3194ff; 
+  /* background: linear-gradient(rgb(48, 146, 253), rgb(33, 125, 226));  */
+}
+.main-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.F{
+  width: 100%;   
+  height: 30rpx;
+  background: #f2f2f2;
+}
+.risk,.load,.policy{
+  width: 100%; 
+  margin-top: 20rpx;
+  text-align: center;
+  margin-bottom: 40rpx;  
+}
+.risk .title,
+.load image,
+.policy image,
+.borrow image{
+  width: 300rpx;
+  height: 88rpx;
+}
+.risk .content{
+  width: 100%;
+  height: 654rpx;
+}
+.load .content,
+.policy .content{
+  width: 83%;
+  border-radius: 6px;   
+  border: 3px solid #f9af00;
+  margin: -35rpx auto 0;
+  color: #f9af00;
+  background: #fff7dd;
+  font-size: 13px; 
+  text-align: left; 
+  padding: 50rpx 20rpx 50rpx;
+}
+.borrow{
+  width: 100%;
+  text-align: center;  
+  background: linear-gradient(rgb(48, 146, 253), rgb(4, 84, 171));  
+}
+.borrow image{
+  margin-bottom: 20rpx;
+}
+.borrow-item{
+  width: 90%;
+  margin: 0 auto 30rpx;
+}
+.borrow-item .num,
+.borrow-item .content{
+  height: 100rpx;
+  border-radius: 6px; 
+  display: inline-block;
+  border: 3px solid #f9af00;
+  background: #fff7dd; 
+  color: #f9af00;  
+}
+.borrow-item .num{
+  width: 10%; 
+  line-height: 100rpx;
+  font-size: 14px;  
+}
+.borrow-item .content{
+  width: 77%;   
+  margin-left: 5%; 
+  font-size: 14px;
+  text-align: left;
+  padding: 0 10rpx;
+  line-height: 50rpx;
+  vertical-align: top;
+}

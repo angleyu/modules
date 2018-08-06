@@ -1,0 +1,144 @@
+<!--pages/detail/detail.wxml-->
+<view class='loans'>
+  <view class='loans-title'>
+    <image src="{{pro.img}}"></image>
+    <view>
+        <view class='title-one'>
+            {{pro.title}}
+        </view>
+        <view class='title-two'>
+         {{pro.info}}
+        </view>
+    </view> 
+  </view>
+  <view class='loans-body'>
+    <view>
+        <view class='loans-one'>{{pro.money}}</view>
+        <view class='loans-two'>贷款金额</view>
+    </view> 
+    <view>
+        <view class='loans-one'>{{pro.lilv}}</view>
+        <view class='loans-two'>贷款利率</view>
+    </view> 
+    <view>
+        <view class='loans-one'>{{pro.pledge}}</view>
+        <view class='loans-two'>抵押物</view>
+    </view> 
+  </view>
+</view>
+
+<view class='flow'>
+  <view class='flow-title'>
+      银行抵押流程
+  </view>
+
+  <view class='flow-body'>
+    <view class='body-one'>
+    <view class='img'>
+       <image src='/images/3-canpin/3-产品详情_03.png'></image>
+       <view class='txt'>提出申请</view>
+    </view>
+     
+      <view class='line'></view>
+      <view class='img'>
+          <image src='/images/3-canpin/3-产品详情_05.png'></image>
+          <view class='txt'>资质审核</view>
+      </view>
+      
+      <view class='line'></view>
+      <view class='img'>
+      <image src='/images/3-canpin/3-产品详情_07.png'></image>
+      <view class='txt'>银行审批</view>
+      </view>
+      
+      <view class='line'></view>
+      <view class='img'>
+        <image src='/images/3-canpin/3-产品详情_09.png'></image>
+        <view class='txt'>抵押登记</view>
+      </view>
+      
+      <view class='line'></view>
+      <view class='img'>
+        <image src='/images/3-canpin/3-产品详情_11.png'></image>
+        <view class='txt'>银行通过</view>
+      </view>
+      
+  
+    </view>
+  </view>
+</view>
+
+<view style='background:#fff;margin:30rpx 0;'>
+<view class='flow flow-two'>
+  <view class='flow-title'>
+      办理流程
+  </view>
+
+  <view class='flow-body'>
+    <view class='body-one'>
+    <view class='img'>
+       <image src='/images/3-canpin/3-产品详情_03.png'></image>
+       <view class='txt'>申请贷款</view>
+    </view>
+     
+      <view class='line'></view>
+      <view class='img'>
+          <image src='/images/3-canpin/3-产品详情_22.png'></image>
+          <view class='txt'>电话初审</view>
+      </view>
+      
+      <view class='line'></view>
+      <view class='img'>
+      <image src='/images/3-canpin/3-产品详情_23.png'></image>
+      <view class='txt'>门店管理</view>
+      </view>
+      
+      <view class='line'></view>
+      <view class='img'>
+        <image src='/images/3-canpin/3-产品详情_11.png'></image>
+        <view class='txt'>银行通过</view>
+      </view>
+      
+  
+    </view>
+  </view>
+</view>
+</view>
+
+<view class='flow'>
+  <view class='flow-title'>
+     产品特点
+  </view>
+  <view class='flow-con'>
+      <text>1. 用途多样：可用于经营，购车，教育，医疗，大额耐用品消费以及奇特合法合规用途；</text>
+      <text>2. 抵押物范围广：客户本人（含配偶）名下的住房，商用房，商用两用房均可用于抵押；</text>
+      <text>3. 额度高：最高可抵押房产价值的100%;4.可循环使用：一次性抵押，循环使用，随借随还，方便快捷
+</text>
+  </view>
+</view>
+
+<view class='flow'>
+  <view class='flow-title'>
+     申请特点
+  </view>
+
+  <view class='flow-con'>
+      <text>1. 用途多样：可用于经营，购车，教育，医疗，大额耐用品消费以及奇特合法合规用途；</text>
+      <text>2. 抵押物范围广：客户本人（含配偶）名下的住房，商用房，商用两用房均可用于抵押；</text>
+      <text>3. 额度高：最高可抵押房产价值的100%;4.可循环使用：一次性抵押，循环使用，随借随还，方便快捷
+</text>
+  </view>
+</view>
+
+<view class='flow'>
+  <view class='flow-title'>
+     申请条件
+  </view>
+
+  <view class='flow-con'>
+      <text>1. 用途多样：可用于经营，购车，教育，医疗，大额耐用品消费以及奇特合法合规用途；</text>
+      <text>2. 抵押物范围广：客户本人（含配偶）名下的住房，商用房，商用两用房均可用于抵押；</text>
+      <text>3. 额度高：最高可抵押房产价值的100%;4.可循环使用：一次性抵押，循环使用，随借随还，方便快捷
+</text>
+  </view>
+</view>

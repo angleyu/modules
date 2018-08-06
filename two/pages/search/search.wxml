@@ -1,0 +1,29 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/service /service .wxml"/>
+<template is="service"></template>
+<view class='search'>
+    <input bindblur='search' placeholder='搜索您想要的产品' placeholder-style='color:#ccc;font-size:14px;' bindfocus='nav'></input>
+    <icon class='search-icon' type='search' size='25' color='#ccc'></icon>
+  </view>
+
+  <view class='product'>
+    <view class='one'></view>
+    <view class='title'>热门产品</view>
+    <view class='one'></view>
+  </view>
+
+<view class='product-info'>
+  <view class='info-con'>
+    <button bindtap='onProduct' data-id="101" size='mini'>房屋抵押贷款</button>
+    <button bindtap='onProduct' data-id="302" size='mini'>信用贷款</button>
+  </view>
+  <view class='info-con'>
+    <button bindtap='onProduct' data-id="104" size='mini'>有车一族</button>
+    <button bindtap='onProduct' data-id="102" size='mini'>车辆抵押贷款</button>
+    <button bindtap='onProduct' data-id="304" size='mini'>个人消费</button>
+  </view>
+  <view class='info-con'>
+    <button bindtap='onProduct' data-id="206" size='mini'>白领人士</button>
+    <button bindtap='onProduct' data-id="303" size='mini'>企业抵押贷款</button>
+  </view>
+</view>

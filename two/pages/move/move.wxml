@@ -1,0 +1,87 @@
+<!--pages/move/move.wxml-->
+<import src="/pages/service /service .wxml"/>
+<view class='main-body'>
+  <view class='F'></view>
+  <view class='risk'>
+    <image class='title' src='/images/risk.png'></image>
+    <image class='content' src='/images/risk-content.png'></image>
+  </view>
+  <view class='load'>
+    <image src='/images/7-安全保障_54.png'></image>
+    <view class='content'>
+      <view>
+      1.提供100%合法出借方，充分保障借款人的利益。      
+      </view>
+      <view>
+      2.严格审核抵押物的真实性及有效性。      
+      </view>
+      <view>
+      3.准确核实抵押与解压时间及间隔时间，保障客户的最大利益化。      
+      </view>
+      <view>
+      4.帮助客户准备充分的真实有效所需要材料，确保贷款。     
+      </view>      
+    </view>
+  </view>
+  <view class='policy'>
+    <image src='/images/7-安全保障_57.png'></image>
+    <view class='content'>
+      <view>
+      1.提供撮合服务服务的合法性
+      </view>
+      <view>
+      2.借款人与借出方借贷关系的合法性
+      </view>
+      <view>
+      3.电子合同的合法性
+      </view>
+      <view>
+      4.贷款审核保障极速放款
+      </view>
+    </view>
+  </view>
+  <view class='borrow'>
+    <image src='/images/7-安全保障_60.png'></image>
+    <view class='borrow-item'>
+      <view class='num'>
+        01
+      </view>
+      <view class='content'>
+        一线客服经验丰富,能根据单个案例定制方案，帮客户快速解决资金问题。
+      </view>
+    </view>
+    <view class='borrow-item'>
+      <view class='num'>
+        02
+      </view>
+      <view class='content'>
+        一线客服经验丰富,能根据单个案例定制方案，帮客户快速解决资金问题。
+      </view>
+    </view>
+    <view class='borrow-item'>
+      <view class='num'>
+        03
+      </view>
+      <view class='content'>
+        一线客服经验丰富,能根据单个案例定制方案，帮客户快速解决资金问题。
+      </view>
+    </view>
+    <view class='borrow-item'>
+      <view class='num'>
+        04
+      </view>
+      <view class='content'>
+        一线客服经验丰富,能根据单个案例定制方案，帮客户快速解决资金问题。
+      </view>
+    </view>
+    <view class='borrow-item'>
+      <view class='num'>
+        05
+      </view>
+      <view class='content'>
+        一线客服经验丰富,能根据单个案例定制方案，帮客户快速解决资金问题。
+      </view>
+    </view>
+  </view>
+</view>
+<template is="service"></template>

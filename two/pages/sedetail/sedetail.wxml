@@ -1,0 +1,20 @@
+<template name = "sedetail">
+    
+    <view class='info-title'>
+        <image src="{{item.img}}"></image>
+        <text>{{item.title}}</text> 
+    </view>
+    <view class='info-body'>
+      <view class='info-money'>
+          <view class='money'>
+              {{item.money}}
+          </view>
+          <view>贷款金额</view>
+      </view>
+      <view class='info-con'>
+          <view>{{item.info}}</view>
+          <view class='year'>{{item.year}}</view>
+      </view>
+    </view>
+    <image wx:if="{{item.hot==1}}" class='hot' src="/images/loan/hot.png"></image>
+</template>

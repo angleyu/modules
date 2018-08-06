@@ -1,0 +1,14 @@
+<view class="contain-img">
+  <image src='/images/1_03.png'></image>
+</view>
+<view class='contain-con'>
+  <view class='con-1'>
+      没有搜到您想要的内容
+  </view>
+  <view class='con-2'>
+    <text>您可以</text>
+    <image src="/images/1_07.png"></image>
+    <text class='txt'>联系客服</text>
+    <text>咨询相关事宜</text>
+  </view>
+</view>

@@ -1,0 +1,104 @@
+<!--pages/main/main.wxml-->
+<import src="/pages/service /service .wxml"/>
+<view class='mian-container'>
+  <view class='search'>
+    <input placeholder='搜索您想要的产品' placeholder-style='color:#ccc;font-size:14px;' bindfocus='nav'></input>
+    <icon class='search-icon' type='search' size='25'></icon>
+  </view>
+
+  <view class='list'>
+    <view bindtap='product' class='list-con' data-id="pledge">
+        <image src="/images/1-首页_03.png"></image>
+        <text>抵押贷款</text>
+    </view>
+    
+    <view bindtap='product' class='list-con' data-id="firm">
+        <image src="/images/1-首页_05.png"></image>
+        <text>企业贷款</text>
+    </view>
+
+    <view bindtap='product' class='list-con' data-id="credit">
+        <image src="/images/1-首页_07.png"></image>
+        <text>信用贷款</text>
+    </view>
+  </view>
+</view>
+
+<view class='swiper'>
+ <image src="/images/1-首页_13.png"></image>
+  <swiper class='swiperBox' catchtap="onImg" vertical='{{true}}'        circular='true' current="2" autoplay='true'>
+  <block wx:for="{{swiper}}">
+  <swiper-item>
+    <view class='item-con'>
+      <text>{{item}}</text>
+    </view>
+  </swiper-item >
+  </block>
+  </swiper>
+</view>
+
+<view class='hot'>
+  <view class='hot-wrap'>
+    <text>热门产品</text>
+    <image src="/images/1-首页_16.png"></image>
+  </view>
+</view>
+
+<block wx:for="{{money}}">
+<view bindtap='detail' data-id='{{item.id}}' class='hot-con'>
+  <view class='news'>
+    <view class='news-left'>
+      <image src='{{item.image}}'></image>
+      <view>
+        <text class='one'>{{item.have}}</text>
+        <text>{{item.have1}}</text>
+      </view>
+    </view>
+
+    <view class='news-right'>{{item.have2}}</view>
+  </view>
+
+  <view class='money'>
+    <view class='money-item'>
+      <view class='item-one'>
+       {{item.money}}
+      </view>
+      <view class='item-two'>
+       贷款金额
+      </view>
+    </view>
+    <view class='money-item'>
+      <view class='item-one'>
+         {{item.lilv}}
+      </view>
+      <view class='item-two'>
+       贷款利率
+      </view>
+    </view>
+    <view class='money-item'>
+      <view class='item-one'>
+         {{item.pawn}}
+      </view>
+      <view class='item-two'>
+      抵押物
+      </view>
+    </view>
+  </view>
+</view>
+</block>
+
+<view class='tele' bindtap='tele'>
+    <image src="/images/tele.png"></image>
+    <text>拨打热线电话:110</text>
+</view>
+
+<!-- <image class='tele1' bindtap='tele' src="/images/6-联系我们_05.png"></image>
+
+
+<button id='kk' class='tele2' open-type='contact'>
+<image open-type='contact' src="/images/6-联系我们_03.png"></image>
+</button> -->
+<view>
+<template is="service"></template>
+
+</view>

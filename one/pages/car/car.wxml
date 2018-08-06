@@ -1,0 +1,49 @@
+<!--pages/car/car.wxml-->
+<view hidden='{{!loadingHidden}}' class='cart-wrap'>
+  <block wx:if="{{cartData.length>0}}">
+    <view class='car'>
+      <block wx:for="{{cartData}}" wx:key="*this">
+        <view class='cart'>
+          <view class='cart-left'>
+            <image wx:if="{{item.selectStaus}}" data-index="{{index}}" bindtap='ToggleStatus' data-status="{{item.selectStaus}}" class='choose' src="/images/零食商贩/icon/circle@selected.png"></image>
+            <image wx:else data-index="{{index}}" bindtap='ToggleStatus' data-status="{{item.selectStaus}}" class='choose' src="/images/零食商贩/icon/circle@noselected.png"></image>
+            <view class='img-wrap'>
+              <image class='main-img' src="{{item.main_img_url}}"></image>
+            </view>
+            <view class='cart-info'>
+              <view class='info-name'>{{item.name}}</view>
+              <view class='info-num'>
+                <view data-index="{{index}}" data-types="cut" bindtap='changeCounts' class='change {{item.counts==1?"active":""}}'>-</view>
+                <view class='num'>{{item.counts}}</view>
+                <view data-index="{{index}}" data-types="add" bindtap='changeCounts' class='change'>+</view>
+              </view>
+
+            </view>
+          </view>
+          <view class='info-right'>
+            <view class='info-money'>{{item.price}}</view>
+            <view data-index="{{index}}" bindtap='onDel' class='del'>x</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class='allcart'>
+      <view class='left'>
+        <image wx:if="{{totalType==cartData.length}}" bindtap='selectAll' data-status="{{totalType==cartData.length?true:false}}" src="/images/零食商贩/icon/all@selected.png"></image>
+        <image wx:else bindtap='selectAll' data-status="{{totalType==cartData.length?true:false}}" src="/images/零食商贩/icon/all.png"></image>
+        <view class='allnum'>全选({{totalCounts}})</view>
+      </view>
+      <view class='right'>
+        <view>下单</view>
+        <view class='all'>
+          <view class='line'></view>
+          <view>￥{{totalSum}}</view>
+        </view>
+        <image bindtap='onOrder' src="/images/零食商贩/icon/arrow@grey.png"></image>
+      </view>
+    </view>
+  </block>
+
+  <view class='no-data' wx:else>您的购物车是空的</view>
+</view>
+<loading hidden="{{loadingHidden}}">加载中</loading>

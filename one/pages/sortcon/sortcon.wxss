@@ -1,0 +1,47 @@
+.con-wrap {
+   width: 560rpx;
+   padding-top: 30rpx;
+   margin: 0 auto;
+}
+.con-wrap .top-img {
+  width: 100%;
+  height: 220rpx;
+}
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+.line .n {
+  width: 50rpx; 
+  border-top: 1px solid #000;
+}
+.line .txt {
+  font-size: 28rpx;
+  color: #ab956d;
+  margin:0 20rpx;
+}
+.sortlist {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; */
+  overflow: hidden;
+}
+.list {
+  width: 180rpx;
+  font-size: 24rpx;
+  height: 150rpx;
+  float: left;
+  margin-right: 5rpx;
+}
+.list image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 50rpx;
+}
+.list view {
+  text-align: center;
+}

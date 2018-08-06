@@ -1,0 +1,68 @@
+<!--pages/detail/detail.wxml-->
+<view hidden='{{!loadingHidden}}'>
+<view class='car-detail'>
+  <image class='theme' src='{{detailData.main_img_url}}'></image>
+  <view class='car-button'>
+    <view class='count'>
+      <picker bindchange='onPickerChange' range='{{countsArray}}' disabled='{{detailData.stock>0?false:true}}'>
+        <view class='car-num'>
+          数量
+          <text class='num'>{{num}}</text>
+          <image src="/images/零食商贩/icon/arrow@down.png"></image>
+        </view>
+      </picker>
+    </view>
+    
+    <view class='car-line'></view>
+    <view class='car-add' bindtap='onAddingCart'>
+      <text>加入购物车</text>
+      <image src="/images/零食商贩/icon/cart.png"></image>
+      <image style='{{translateStyle}}' class='addCartImg {{isFly?"animation":""}}' src='{{detailData.main_img_url}}'></image>
+    </view>
+
+  </view>
+  <view class='car' bindtap='onCart'>
+  <image class='{{isChange?"change":""}}' src="/images/零食商贩/icon/cart@top.png"></image>
+  <view wx:if="{{all>0}}">{{all}}</view>
+  </view>
+  
+  <view class='detail-list'>
+    <text class='txt1' wx:if="{{detailData.stock>0}}">有货</text>
+    <text class='txt1' wx:else>无货</text>
+    <text class='list-name'>
+      {{detailData.name}}
+    </text>
+    <text>￥{{detailData.price}}</text>
+  </view>
+</view>
+
+<view class='detail-tab'>
+  <view class='tab-head'>
+    <block wx:for="{{list}}" wx:key="*this">
+    <view data-index="{{index}}" bindtap='onTap' class='{{aindex==index?"select":""}}'>{{item}}</view>
+    </block>
+  </view>
+  <view class='tab-con'>
+    <view class='one' wx:if="{{aindex==0}}">
+      <block wx:for="{{detailData.imgs}}" wx:key="*this">
+         <image src="{{item.img_url.url}}"></image>
+      </block>
+       
+    </view>
+    <view class='two' wx:elif="{{aindex==1}}">
+        <block wx:for="{{detailData.properties}}" wx:key="*this">
+            <view>
+              <text>{{item.name}}</text>
+              <text>{{item.detail}}</text>
+            </view>
+        </block>
+    </view>
+
+    <view class='three' wx:else>
+      七天无理由免费退货
+    </view>
+  </view>
+</view>
+</view>
+<loading hidden="{{loadingHidden}}">加载中</loading>
+

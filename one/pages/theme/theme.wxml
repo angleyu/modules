@@ -1,0 +1,10 @@
+<!--pages/theme/theme.wxml-->
+<import src="/tpts/products/products.wxml" />
+<view hidden='{{!loadingHidden}}'>
+<view class='theme-img'>
+   <image src="{{themeData.head_img.url}}"></image> 
+</view>
+
+<template is="products" data="{{products:newsList}}"></template>
+</view>
+ <loading hidden="{{loadingHidden}}">加载中</loading>

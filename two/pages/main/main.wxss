@@ -1,0 +1,177 @@
+/* pages/main/main.wxss */
+@import "../service /service .wxss";
+page {
+  background: #f4f4f4;
+}
+.mian-container {
+  background: #fff;
+  padding-bottom: 40rpx;
+  margin-bottom: 30rpx;
+}
+input {
+  padding-left: 20rpx;
+}
+.search{
+  width:90%;
+  margin: 0 auto;
+  position: relative;
+}
+.search input {
+  width: 100%;
+ border: 1px solid #ccc;
+  border-radius: 40rpx;
+  height: 80rpx;
+  text-indent: 30rpx;
+}
+.search icon {
+  position: absolute;
+  right: 40rpx;
+  top: 18rpx;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}
+.list .list-con {
+  display: flex;
+  flex-direction: column;
+}
+.list-con image {
+  width:120rpx;
+  height: 120rpx;
+}
+
+
+/*========轮播  */
+.swiper {
+  display: flex;
+  height:50rpx;
+  background: #fff;
+  padding: 30rpx;
+}
+swiper {
+  width: 700rpx;
+  height: 50rpx;
+}
+.swiper image {
+  width: 30rpx;
+  height:30rpx;
+  margin-right: 40rpx;
+  margin-top: 12rpx;
+}
+
+.hot {
+  width:100%;
+}
+.hot-wrap {
+  width:400rpx;
+  margin: 30rpx auto;
+  display: flex;
+}
+.hot-wrap image {
+  width: 150rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}
+
+.hot-con {
+  background: #fff;
+  width:90%;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.hot-con image {
+  width: 80rpx;
+  height: 50rpx;
+}
+.news {
+  padding: 40rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+}
+.news-left {
+  display: flex;
+  align-items: center;
+}
+.news-left view {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.news-left .one {
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
+.news-left text {
+  font-size: 32rpx;
+}
+
+.news-right {
+  align-self: flex-end;
+  color: #f08a00;
+  border: 1px solid #f08a00;
+   font-size: 30rpx;
+   border-radius: 10rpx;
+   padding: 0 10rpx;
+}
+.money {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+  padding: 40rpx 0;
+}
+.item-one {
+  font-weight: bold;
+}
+.item-two {
+  color: #ccc;
+  text-align: center;
+  font-size: 28rpx;
+}
+.tele {
+  display: flex;
+  justify-content: center;
+}
+.tele image{
+  width:30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.tele {
+  font-size: 30rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+/* .tele1 {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 30rpx;
+  bottom: 25%;
+}
+
+.tele2 {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 30rpx;
+  bottom: 15%;
+  border: 0;
+  outline: none;
+}
+.tele2 image {
+  width:100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+
+

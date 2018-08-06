@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/orderDetails/orderDetails",
+    "pages/sort/sort",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/theme/theme",
+    "pages/car/car",
+    "pages/my/my",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ab956d",
+    "navigationBarTitleText": "零食商贩",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ab956d",
+    "borderStyle": "white",
+    "backgroundStyle": "#f4f4f4",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/零食商贩/toolbar/home.png",
+        "selectedIconPath": "/images/零食商贩/toolbar/home@selected.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "/images/零食商贩/toolbar/category.png",
+        "selectedIconPath": "/images/零食商贩/toolbar/category@selected.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "/images/零食商贩/toolbar/cart.png",
+        "selectedIconPath": "/images/零食商贩/toolbar/cart@selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/零食商贩/toolbar/my.png",
+        "selectedIconPath": "/images/零食商贩/toolbar/my@selected.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+
+.news {
+   padding: 0 12rpx; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ 
+.news-con {
+  width:355rpx;
+  border-radius: 10rpx;
+  height: 370rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+  background: #f4f4f4;
+  display: flex;
+   justify-content: center;
+  /* align-items: center; */
+}
+.news-con image {
+  width: 70%;
+  height: 70%;
+}
+.news-info {
+   position: absolute;
+  bottom: 40rpx;
+  width: 100%; 
+}
+.news-info view {
+  display: block;
+  font-size: 28rpx;
+  text-align: center;
+}
+.news-info view:last-child {
+  font-size: 24rpx;
+}

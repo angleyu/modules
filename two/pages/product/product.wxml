@@ -1,0 +1,34 @@
+<!--pages/product/product.wxml-->
+<import src="../sedetail/sedetail.wxml"/>
+<view class='product-title'>
+  <view bindtap='tab' data-title="pledge" class='{{title=="pledge"?"active":""}}'>抵押贷款</view>
+  <view bindtap='tab' data-title="firm" class='{{title=="firm"?"active":""}}'>企业贷款</view>
+  <view bindtap='tab' data-title="credit" class='{{title=="credit"?"active":""}}'>信用贷款</view>
+</view>
+<view class='product-body'>
+
+  <block wx:for="{{productarr}}">
+  <view bindtap='detail'                        class='product-info' data-id="{{item.id}}">
+  <template is="sedetail" data="{{item}}"></template>
+  </view>
+  </block>
+  <!-- <view  wx:for="{{productarr}}" bindtap='detail'               class='product-info' data-id="{{item.id}}">
+    <view class='info-title'>
+        <image src="{{item.img}}"></image>
+        <text>{{item.title}}</text> 
+    </view>
+    <view class='info-body'>
+      <view class='info-money'>
+          <view class='money'>
+              {{item.money}}
+          </view>
+          <view>贷款金额</view>
+      </view>
+      <view class='info-con'>
+          <view>{{item.info}}</view>
+          <view class='year'>{{item.year}}</view>
+      </view>
+    </view>
+    <image wx:if="{{item.hot==1}}" class='hot' src="/images/loan/hot.png"></image>
+  </view> -->
+</view>

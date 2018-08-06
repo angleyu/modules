@@ -1,0 +1,86 @@
+/* pages/detail/detail.wxss */
+.loans {
+  margin: 20rpx 0;
+  background: #fff;
+  padding-top: 40rpx;
+}
+.loans-title {
+  margin-left:50rpx;
+  display: flex;
+}
+.loans-title view {
+  width: 550rpx;
+}
+.loans-title image {
+  width:100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+}
+.title-two {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.loans-body {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  padding: 40rpx 0;
+}
+.loans-body view {
+  width: 200rpx;
+}
+.loans-body .loans-two {
+  font-size: 24rpx;
+  color: #ccc;
+  text-align: center;
+}
+.loans-one{
+  text-align: center;
+}
+.flow {
+  background: #fff;
+  padding: 30rpx 30rpx;
+  margin-bottom: 30rpx;
+}
+.flow-two {
+  width: 72%;
+}
+.flow-title {
+  font-size: 32rpx;
+  border-left: 2px solid #296efe;
+  padding-left:30rpx; 
+}
+.body-one {
+   display: flex;
+  justify-content: space-around;
+  align-items: center; 
+   flex-wrap: wrap; 
+  margin-top: 20rpx;
+  font-size: 18rpx;
+  text-align: center;
+  color: #666;
+  height: 80rpx;
+}
+
+.body-one .img{
+    width: 75rpx;
+}
+.body-one image {
+  width: 50rpx;
+  height: 60rpx;
+  margin-bottom: 10rpx;
+}
+.body-one .line {
+  width: 40rpx;
+  margin-top: -20rpx;
+  border: 1px solid #97c5ff;
+}
+.flow-con {
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #929292;
+  line-height: 40rpx;
+}
+

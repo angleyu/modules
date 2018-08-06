@@ -1,0 +1,63 @@
+/* pages/search/search.wxss */
+@import "../service /service .wxss";
+.search{
+  width:90%;
+  margin: 20rpx auto 160rpx;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 40rpx;
+  height: 80rpx;
+  text-indent: 30rpx;
+   background-color: #fff; 
+   padding-left: 40rpx;
+}
+.search icon {
+  position: absolute;
+  right: 40rpx;
+  top: 18rpx;
+  z-index: 100;
+}
+
+/*热门  */
+.product .one {
+  width: 100rpx;
+  height: 0rpx;
+  border: 1px solid #ccc;
+}
+.product {
+  font-size: 32rpx;
+  color: #ccc;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.product .title {
+  margin: 0 30rpx;
+}
+
+.product-info button {
+  background: #d9d9d9;
+  color: #aaaaaa;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+}
+.product-info button::after {
+  border: 0;
+}
+
+.info-con:nth-child(1) {
+  width: 450rpx;
+   margin: 20rpx auto;
+}
+.info-con:nth-child(2){
+  width: 634rpx;
+   margin: 20rpx auto;
+}
+.info-con:last-child {
+  width: 450rpx;
+   margin: 20rpx auto;
+}
+

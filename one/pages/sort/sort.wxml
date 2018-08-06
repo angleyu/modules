@@ -1,0 +1,34 @@
+<!--pages/sort/sort.wxml-->
+<import src="../sortcon/sortcon.wxml" />
+<view hidden='{{!loadingHidden}}' class='sort-wrap'>
+  <view class='sort-nav'>
+  <block wx:for="{{sortAll}}" wx:key="*this">
+      <view data-id="{{item.id}}" data-index="{{index}}" bindtap='change' class='nav-li {{index==aindex?"selected":""}}'>
+        {{item.name}}
+      </view>
+  </block>
+  </view>
+  <view class='cates-box'>
+  <view class='sort-con translate{{aindex}}'>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo0}}"></template>
+      </view>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo1}}"></template>
+      </view>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo2}}"></template>
+      </view>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo3}}"></template>
+      </view>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo4}}"></template>
+      </view>
+      <view class='cates-wrap'>
+      <template is="cates" data="{{categoryProduct:categroyInfo5}}"></template>
+      </view>
+  </view>
+  </view>
+</view>
+<loading hidden="{{loadingHidden}}">加载中</loading >

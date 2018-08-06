@@ -1,0 +1,79 @@
+/* pages/tele/tele.wxss */
+@import "../service /service .wxss";
+.take {
+  display: flex;
+  padding: 30rpx 20rpx;
+  justify-content: space-between;
+}
+.take-con {
+  background: #fff;
+  padding: 30rpx 20rpx;
+  display: flex;
+  width:310rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+.take-con image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+.tele2::after {
+  border: 0;
+}
+#kk {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: transparent;
+}
+#kk::after{
+  border: 0;
+}
+#kk image {
+  width:80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.con-1 {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.con-2 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.office {
+  background: #fff;
+  margin: 0 20rpx 30rpx;
+  border-radius: 10px;
+  padding: 30rpx 30rpx;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 60rpx;
+}
+.head {
+  font-size: 36rpx;
+  color: #000;
+  position: relative;
+}
+.head .circle{
+  width: 15rpx;
+  height: 15rpx;
+  background: #f5a233;
+  position: absolute;
+  border-radius:100%; 
+  top: 0;
+  left: 252rpx;
+}
+
+.office-sum{
+  display: flex;
+  justify-content: space-between;
+}
+.lt {
+  font-size: 30px;
+  margin-top: 40rpx;
+}

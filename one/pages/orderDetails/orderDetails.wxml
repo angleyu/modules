@@ -1,0 +1,52 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<view hidden='{{!loadingHidden}}'>
+<view wx:if="{{!addressInfo}}" bindtap='chooseAddress' class='addressButton'>
+  <text>+</text>
+  添加地址
+</view>
+<view wx:if="{{addressInfo}}" bindtap='chooseAddress' class='address-info'>
+<view class='user-address'>
+  <view class='user-left'>
+      <view class='user-info'>
+          <view class='name'>
+          <image src="/images/零食商贩/icon/user.png"></image>
+          <text>{{addressInfo.userName}}</text>
+          </view>
+          <view class='mobile'>
+            <image src='/images/零食商贩/icon/mobile.png'></image>
+            <text>{{addressInfo.telNumber}}</text>
+          </view>
+      </view>
+     <view class='details'>
+      {{addressInfo.address}}
+      </view>
+  </view>
+  <view class='arrow-icon'>
+     
+    <image src="/images/零食商贩/icon/arrow@right.png"></image>
+  </view>
+</view>
+</view>
+<view class='goods'>
+  <block wx:for="{{buygoods}}" wx:key="*this">
+  <view class='goods-info'>
+    <view class='info-left'>
+    <view class='info-img'>
+    <image src="{{item.main_img_url}}"></image>
+    </view>
+    <view class='info-text'>
+      <view class='info-name'>{{item.name}}</view>
+      <view class='info-price'>￥{{item.price}}</view>
+    </view>
+    </view>
+    <view class='info-counts'>×{{item.counts}}</view>
+  </view>
+  </block>
+</view>
+
+<view class='payfor'>
+  <view class='money'>付款合计：￥{{allPrice}}</view>
+  <view class='go'>去付款</view>
+</view>
+</view>
+<loading hidden="{{loadingHidden}}">加载中</loading>

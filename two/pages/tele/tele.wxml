@@ -1,0 +1,37 @@
+<!--pages/tele/tele.wxml-->
+<import src="/pages/service /service .wxml"/>
+<template is="service"></template>
+<view class='take'>
+  <view class='take-con'>
+  <button id='kk' open-type='contact'>
+    <image src="/images/6-联系我们_03.png"></image>
+    </button>
+    <view class='con'>
+        <view class='con-1'>在线咨询</view>
+        <view class='con-2'>工作日9:00~8:00</view>
+    </view>
+  </view>
+  <view class='take-con'>
+    
+    <image bindtap='tele' src="/images/6-联系我们_05.png"></image>
+    
+    <view class='con'>
+        <view class='con-1'>拨打电话</view>
+        <view class='con-2'>工作日9:00~18:00</view>
+    </view>
+  </view>
+</view>
+
+<view class='office' bindtap='place'>
+  <view class='head'>丰台区公司总部<view class='circle'></view></view>
+  <view class='office-sum'> 
+    <view class='office-con'>
+      <view>公司专线：010-56340200</view>
+      <view>400服务热线：1111111111</view>
+      <view>邮箱：mmmmmmmmm@sina.com</view>
+      <view>邮编：10010</view>
+      <view>地址：北京市55555555</view>
+    </view>
+    <view class='lt'>></view>
+  </view>
+</view>

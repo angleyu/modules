@@ -1,0 +1,7 @@
+<!--pages/reresult/reresult.wxml-->
+<import src="../sedetail/sedetail.wxml"/>
+ <block wx:for="{{pro}}">
+<view bindtap='detail'                        class='product-info' data-id="{{item.id}}">
+  <template is="sedetail" data="{{item}}"></template>
+  </view>
+  </block> 

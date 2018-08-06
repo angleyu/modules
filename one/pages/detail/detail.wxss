@@ -1,0 +1,158 @@
+/* pages/detail/detail.wxss */
+page {
+  background: #f4f4f4;
+}
+.car-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+}
+.theme {
+  width: 500rpx;
+  height: 500rpx;
+}
+.car-button {
+  width: 660rpx;
+  height: 100rpx;
+  color: #fff;
+  border-radius: 100rpx;
+  background: #ab956d;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+.car-num {
+   display: flex;
+  align-items: center;
+}
+.car-num image{
+  width: 40rpx;
+  height: 40rpx;
+ 
+  
+}
+.car-num text {
+  margin: 0 50rpx;
+}
+
+.car-line {
+  height: 40rpx;
+  border-left: 1px dotted #fff;
+}
+.car-add text {
+  margin-right: 50rpx;
+}
+.car-add {
+  display: flex;
+  align-items: center;
+}
+.car-add image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.car {
+  position: fixed;
+  top: 60rpx;
+  right: 50rpx;
+}
+.car image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.car image.change{
+  -webkit-animation: maxscale 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes maxscale {
+  0%{
+    -webkit-transform: scale(1.2);
+  }
+  100%{
+     -webkit-transform: scale(1);
+  }
+}
+.car view {
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  color: #fff;
+  background: #ab956d;
+  font-size: 24rpx;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  border-radius: 100%;
+}
+.detail-list .txt1{
+    font-size: 28rpx;
+}
+.detail-list {
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  text-align: center;
+}
+.detail-list .list-name {
+  font-size: 36rpx;
+  margin-bottom:30rpx;
+  /* display: inline-block; */
+}
+
+.detail-tab {
+  background: #fff;
+}
+.tab-head {
+  display: flex;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #ceced2;
+  font-size: 32rpx;
+  color: #ceced2;
+  margin-bottom: 20rpx;
+}
+.tab-head view {
+  flex: 1;
+  text-align: center;
+  padding: 30rpx 0;
+  border-bottom: 2px solid #fff;
+}
+.tab-head view.select {
+  border-color:#ab956d; 
+}
+.tab-con {
+  padding-bottom:100rpx; 
+}
+.one image{
+  width: 100%;
+  display: block;
+}
+.two {
+  padding-left: 40rpx;
+  font-size: 28rpx;
+}
+.two view {
+  margin-bottom: 30rpx;
+}
+.two text:first-child {
+  display: inline-block;
+  width: 150rpx;
+  text-align: center;
+}
+.three {
+  text-align: center;
+}
+.car-button .addCartImg {
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute; 
+  right: 12rpx;
+  opacity: 0;
+} 
+.car-button .addCartImg.animation {
+  opacity: 1;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+

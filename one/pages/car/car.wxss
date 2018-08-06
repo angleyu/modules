@@ -1,0 +1,107 @@
+/* pages/car/car.wxss */
+.cart {
+  padding: 20rpx 40rpx 20rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  border-bottom: 1px solid #f4f4f4;
+  
+}
+.car {
+  margin-bottom: 100rpx;
+}
+.cart-left {
+  display: flex;
+  align-items: center;
+}
+.choose {
+  width: 40rpx;
+  height: 40rpx;
+}
+.img-wrap {
+  width: 180rpx;
+  height: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  margin: 0 30rpx;
+}
+.main-img {
+  width: 160rpx;
+  height: 160rpx;
+}
+.cart-info {
+  font-size: 24rpx;
+  width: 250rpx;
+}
+.cart-info,.info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 180rpx;
+}
+.info-right .del{
+  font-size: 40rpx;
+}
+.info-num {
+  display: flex;
+  width: 200rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.change {
+  font-size: 50rpx;
+}
+.change.active{
+  color: #f0f0f0;
+}
+
+/*底部  */
+.allcart {
+  position: fixed;
+  bottom: 0;
+  background: #ab956d;
+  display: flex;
+  font-size: 30rpx;
+   width: 100%; 
+   /* padding: 0 30rpx;  */
+  height: 100rpx;
+  align-items: center;
+  color: #fff;
+}
+.left {
+  padding-left: 40rpx;
+}
+.left .allnum{
+  margin-left: 30rpx;
+}
+.allcart image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.left,.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+}
+.all {
+  display: flex;
+}
+.line {
+  height: 40rpx;
+  border-left: 1px dotted #fff;
+  margin-right: 10rpx;
+}
+.right {
+  justify-content: space-between;
+  padding-right: 40rpx;
+}
+.no-data {
+  margin-top: 30rpx;
+  color: #d0d0d7;
+  text-align: center;
+}

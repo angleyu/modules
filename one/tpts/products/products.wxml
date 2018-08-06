@@ -1,0 +1,13 @@
+<template name = "products">
+<view class='news'>
+   <block wx:for="{{products}}" wx:key="*this">
+       <view  bindtap='onDetail' data-id="{{item.id}}" class='news-con'>
+          <image class='bg' src="{{item.main_img_url}}"></image>
+          <view class='news-info'>
+            <view>{{item.name}}</view>
+            <view>￥{{item.price}}</view>
+          </view>
+       </view> 
+       </block>
+</view>
+</template>

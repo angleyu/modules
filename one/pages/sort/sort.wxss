@@ -1,0 +1,57 @@
+/* pages/sort/sort.wxss */
+@import '../sortcon/sortcon.wxss';
+page{
+  width: 100%;
+  height: 100%;
+}
+.sort-wrap {
+  display: flex;
+ height: 100%;
+}
+.sort-nav {
+  flex:0 0 150rpx;
+  font-size: 28rpx;
+  border-right: 1px solid #ab956d;
+}
+.nav-li {
+  padding: 20rpx 0;
+  text-align: center;
+  border-left: 5rpx solid #fff;
+}
+.nav-li.selected{
+  color: #ab956d;
+  border-color: #ab956d;
+}
+.cates-box{
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.sort-con {
+  width: 100%;
+  /* overflow: hidden; */
+  /* height: 100vh; */
+  -webkit-transition: all 500ms;
+  /* padding: 20rpx 30rpx; */
+}
+.cates-wrap{
+  height: 100vh;
+}
+.translate0 {
+    -webkit-transform: translate(0,0)
+}
+.translate1 {
+   -webkit-transform: translate(0,-100vh)
+}
+.translate2 {
+    -webkit-transform: translate(0,-200vh)
+}
+.translate3 {
+    -webkit-transform: translate(0,-300vh)
+}
+.translate4 {
+    -webkit-transform: translate(0,-400vh)
+}
+.translate5 {
+    -webkit-transform: translate(0,-500vh)
+}
